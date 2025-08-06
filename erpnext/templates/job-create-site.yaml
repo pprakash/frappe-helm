@@ -95,7 +95,7 @@ spec:
               --db-host=${DB_HOST} \
               --db-port=${DB_PORT} \
               {{- if .Values.jobs.createSite.dbName}}
-                --db_name=${{.Values.jobs.createSite.dbName}} \
+                --db-name=${{.Values.jobs.createSite.dbName}} \
               {{- end }}
               --admin-password=${ADMIN_PASSWORD} \
               --mariadb-root-username=${DB_ROOT_USER} \
