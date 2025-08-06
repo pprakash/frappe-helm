@@ -321,6 +321,7 @@ jobs:
     adminPassword: "changeit"
     adminExistingSecret: ""
     adminExistingSecretKey: "password"
+    dbName: "erp"
     installApps:
     - "erpnext"
     dbType: "mariadb"
