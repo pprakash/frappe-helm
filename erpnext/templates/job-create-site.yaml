@@ -90,7 +90,7 @@ spec:
             set -x;
 
             bench_output=$(bench new-site ${SITE_NAME} \
-              --no-mariadb-socket \
+              --mariadb-user-host-login-scope='%' \
               --db-type=${DB_TYPE} \
               --db-host=${DB_HOST} \
               --db-port=${DB_PORT} \
